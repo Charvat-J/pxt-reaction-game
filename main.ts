@@ -10,7 +10,7 @@ referenceLight = actualLight /= 5;
 
 basic.forever(function () {
     actualLight = input.lightLevel();
-    if(actualLight- referenceLight < tresholdLight) {
+    if(referenceLight- actualLight< tresholdLight) {
         console.log(0)
     } else {
         console.log(1)
